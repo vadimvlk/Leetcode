@@ -1,7 +1,7 @@
 using Leetcode.Solution.Algorithms;
 using Xunit;
 
-namespace TestProject1;
+namespace TestProject;
 
 public class LeetcodeTest
 {
