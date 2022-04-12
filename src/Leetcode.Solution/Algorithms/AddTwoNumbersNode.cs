@@ -4,7 +4,7 @@ public class AddTwoNumbersNode
 {
     // You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.
     //
-    //     You may assume the two numbers do not contain any leading zero, except the number 0 itself.
+    // You may assume the two numbers do not contain any leading zero, except the number 0 itself.
     //
     //
     // Input: l1 = [2,4,3], l2 = [5,6,4]
@@ -24,13 +24,13 @@ public class AddTwoNumbersNode
     }
     
     public ListNode AddTwoNumbers(ListNode l1, ListNode l2) {
-        var result = new ListNode();
-        var current = result;
-        var carry = 0;
+        ListNode result = new ListNode();
+        ListNode current = result;
+        int carry = 0;
 
         while (l1 != null || l2 != null)
         {
-            var sum = carry;
+            int sum = carry;
             if (l1 != null)
             {
                 sum += l1.val;
